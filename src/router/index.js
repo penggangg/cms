@@ -5,9 +5,14 @@ Vue.use(Router)
 
 const router = new Router({
     routes: [
+        // {
+        //     path: '/',
+        //     redirect: '/customerList'
+        // },
         {
             path: '/',
-            redirect: '/customerList'
+            component: resolve => require(['../components/demo.vue'], resolve),
+            meta: { title: '首页123' }
         },
         {
             path: '/',
